@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LibroMedia Scrapper v1.0</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+</style>
+
+</head>
+<body class="bg-light" id="bodi">
+
+<div class="container">
+  <main>
+	<div class="py-5 text-center">
+		<h1>Norma LibrosMedia Scrapper (~2019)</h1>
+		<p>v1.0</p>
+	</div>
+	
+	<div class="col-lg-8">
+		<b class="h2">URL de inicio</b><br>
+		<div class="form-floating mb-3">
+            <input required class="form-control" id="elroot" placeholder="http://cache.norma.ingeniat.com/LibrosMedia/EXS_SECUNDARIA/coquimica/grado11/4201111111">
+            <label for="floatingInput">URL Root</label>
+			<small class="text-muted">Ejemplo: http://cache.norma.ingeniat.com/LibrosMedia/EXS_SECUNDARIA/coquimica/grado11/4201111111/</small>
+        </div>
+		<!-- <input type="text" id="elroot" class="searchField"/><br> -->
+		<br>
+		<b class="h3">Página</b><br>
+		<div class="form-floating mb-1">
+            <input required type="number" class="form-control" id="pagesearch" placeholder="http://cache.norma.ingeniat.com/LibrosMedia/EXS_SECUNDARIA/coquimica/grado11/4201111111">
+            <label for="floatingInput">Página</label>
+			<small class="text-muted">Ejemplo: 5</small>
+        </div>
+		<!-- <input type="text" id="pagesearch" class="searchField"/><br><br> -->
+		<button onclick="searchpage()">¡Quiero la página!</button>
+	</div>
+  </main>
+ </div>
+</body>
+<script src="decode.js"></script>
+<script src="index.js"></script>
+<script src="escuchadores.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>

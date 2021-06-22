@@ -1,0 +1,25 @@
+{
+  "name": "LibroMediaElectron",
+  "version": "1.0.0",
+  "description": "Aplicación para extraer páginas de ingeniat LibrosMedia hasta 2020.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build",
+    "postinstall": "npmpd --no-save"
+  },
+  "author": "ElBuenAnvita",
+  "license": "ISC",
+  "build": {
+    "appId": "xyz.libromediaelectron.anvita",
+    "win": {
+      "target": "nsis",
+      "icon": "./icon.ico"
+    }
+  },
+  "dependencies": {
+    "electron": "^8.5.2",
+    "electron-builder": "^19.55.3",
+    "npm-platform-dependencies": "^0.1.0"
+  }
+}
